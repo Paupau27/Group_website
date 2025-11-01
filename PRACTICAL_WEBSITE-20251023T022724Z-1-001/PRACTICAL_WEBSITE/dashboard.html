@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventory</title>
+  <link rel="stylesheet" href="css1/styles-dashboard.css" />
+</head>
+
+<script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("hidden");
+  }
+</script>
+
+<body>
+  <header class="navbar">
+    <img src="Logo.png" alt="" width="5%" height="auto">
+    <h1><b>Dashboard</b></h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">My Account</a>
+      <a href="#">Logout</a>
+      <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar hidden" id="sidebar">
+      <h2>Menu</h2>
+      <a href="computers.html">🖥️ Computers</a>
+      <a href="#">📡 Devices</a>
+    </aside>
+
+    <main class="main">
+      <section class="card">
+        <h3>Computer Laboratory Inventory</h3>
+        <a href="#" class="btn">+ Add New Equipment</a>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Item Name</th>
+              <th>Item Type</th>
+              <th>Quantity</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>PC 8</td>
+              <td>Computer Unit</td>
+              <td>1</td>
+              <td>Unavailable</td>
+              <td>
+                <a href="#" class="btn">Edit</a>
+                <a href="#" class="btn">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>PC 50</td>
+              <td>Computer Unit</td>
+              <td>1</td>
+              <td>Unavailable</td>
+              <td>
+                <a href="#" class="btn">Edit</a>
+                <a href="#" class="btn">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>Amplifier</td>
+              <td>Sound System</td>
+              <td>1</td>
+              <td>In Use</td>
+              <td>
+                <a href="#" class="btn">Edit</a>
+                <a href="#" class="btn">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    © 2025 School Inventory System | Systems Plus Computer College
+  </footer>
+</body>
+
+</html>
